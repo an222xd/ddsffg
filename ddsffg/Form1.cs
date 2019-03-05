@@ -24,7 +24,7 @@ namespace ddsffg
             var student2 = new Estudiante();
 
             student1.edad = 20;
-            student1.genero = "";
+            student1.genero = "h";
             student1.numeroControl = 1218100524;
             student1.nombre = "";
 
