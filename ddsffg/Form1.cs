@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ddsffg.modelo;
 
 namespace ddsffg
 {
@@ -15,6 +16,19 @@ namespace ddsffg
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Estudiante student1 = new Estudiante();
+            var student2 = new Estudiante();
+
+            student1.edad = 20;
+            student1.genero = "";
+            student1.numeroControl = 1218100524;
+            student1.nombre = "";
+
+
         }
     }
 }
