@@ -13,6 +13,7 @@ namespace ddsffg.modelo.Campeonato
 		private string apelllidos;
 		private DateTime fechaNacimiento;
 		private byte numero;
+		private Equipo idequpo;
 		public Jugador()
 		{
 			this.nombre = "Papu Lince";
@@ -26,5 +27,18 @@ namespace ddsffg.modelo.Campeonato
 		public string Apellidos { get; set; }
 		public string Numero { get; set; }
 		public DateTime Fecha { get; set; }
+		public Equipo Idequipo
+		{
+			get
+			{
+				return this.Idequipo;
+			}
+			set
+			{
+				if(value!=null || !((Equipo)value).nombre.Tolower().Equals("Irapuato"))
+				this.Idequipo = value;
+			}
+
+		}
 	}
 }
