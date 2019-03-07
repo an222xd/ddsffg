@@ -35,7 +35,7 @@ namespace ddsffg.modelo.Campeonato
 			}
 			set
 			{
-				if(value!=null || !((Equipo)value).nombre.Tolower().Equals("Irapuato"))
+				if(value!=null || !((Equipo)value).Nombre.ToLower().Equals("Irapuato"))
 				this.Idequipo = value;
 			}
 

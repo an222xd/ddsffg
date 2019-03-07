@@ -31,6 +31,9 @@ namespace ddsffg.modelo.Campeonato
 				}  
 			}
 		}
+		public string Nombre { get; set; }
+		public string Comunidad { get; set; }
+		public string Entrenador { get; set; }
 
 
 	}
