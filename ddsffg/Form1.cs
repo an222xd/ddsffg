@@ -27,8 +27,8 @@ namespace ddsffg
             student1.edad = 17;
 			student1.genero = 'H';
             student1.numeroControl = 1218100524;
-            student1.nombre = "Jose Antonio Garcia Mtz.";
-			//se manda allamar 
+            student1.nombre = "Jose Antonio Garcia Mtz. ";
+			//se manda allamar los resultados ingresados en el programa
 			textoNombre.Text = student1.nombre;
 			textoNumero.Text = student1.numeroControl.ToString();
 			textoGenero.Text = student1.genero.ToString();
