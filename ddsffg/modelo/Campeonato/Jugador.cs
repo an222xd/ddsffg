@@ -22,11 +22,82 @@ namespace ddsffg.modelo.Campeonato
 
 		}
 
-		public int Id { get; set; }
-		public string Nombre { get; set; }
-		public string Apellidos { get; set; }
-		public string Numero { get; set; }
-		public DateTime Fecha { get; set; }
+		public int Id
+		{
+			get
+			{
+				return this.id;
+			}
+			set
+			{
+				if (value > 0)
+				{
+					this.id = value;
+				}
+			}
+		}
+		public string Nombre
+		{
+			get
+			{
+				return this.nombre;
+
+			}
+			set
+			{
+				{
+					if (value != null || (value.Length >= 3 && value.Length <= 30))
+					{
+						this.nombre = value;
+					}
+				}
+			}
+		}
+		public string Apellidos
+		{
+			get
+			{
+				return this.apelllidos;
+
+			}
+			set
+			{
+				{
+					if (value != null || (value.Length >= 3 && value.Length <= 30))
+					{
+						this.apelllidos = value;
+					}
+				}
+			}
+		}
+		public byte Numero
+		{
+			get
+			{
+				return this.numero;
+			}
+			set
+			{
+				if (value > 0)
+				{
+					this.numero = value;
+				}
+			}
+		}
+		public DateTime Fecha
+		{
+			get
+			{
+				return this.fechaNacimiento;
+			}
+			set
+			{
+				if(value != null)
+				{
+					this.fechaNacimiento = value;
+				}
+			}
+		}
 		public Equipo Idequipo
 		{
 			get
