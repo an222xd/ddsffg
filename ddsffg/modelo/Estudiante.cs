@@ -8,10 +8,10 @@ namespace ddsffg.modelo
 {
     class Estudiante
     {
-    public byte edad { get; set; }
-    public string nombre { get; set; }
-    public char genero { get; set; }
-    public long numeroControl { get; set; }
+		public byte edad { get; set; }
+		public string nombre { get; set; }
+		public char genero { get; set; }
+		public long numeroControl { get; set; }
 
         public long NuumeroControl
         {

@@ -33,10 +33,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.textoNombre = new System.Windows.Forms.MaskedTextBox();
+            this.textoNumero = new System.Windows.Forms.MaskedTextBox();
+            this.textoedad = new System.Windows.Forms.MaskedTextBox();
+            this.textoGenero = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -100,37 +100,38 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Genero";
             // 
-            // maskedTextBox1
+            // textoNombre
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(246, 133);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(275, 37);
-            this.maskedTextBox1.TabIndex = 5;
+            this.textoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoNombre.Location = new System.Drawing.Point(246, 133);
+            this.textoNombre.Name = "textoNombre";
+            this.textoNombre.Size = new System.Drawing.Size(340, 37);
+            this.textoNombre.TabIndex = 5;
+            this.textoNombre.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.textoNombre_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // textoNumero
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(246, 191);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(275, 37);
-            this.maskedTextBox2.TabIndex = 6;
+            this.textoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoNumero.Location = new System.Drawing.Point(246, 191);
+            this.textoNumero.Name = "textoNumero";
+            this.textoNumero.Size = new System.Drawing.Size(340, 37);
+            this.textoNumero.TabIndex = 6;
             // 
-            // maskedTextBox3
+            // textoedad
             // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(246, 254);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(275, 37);
-            this.maskedTextBox3.TabIndex = 7;
+            this.textoedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoedad.Location = new System.Drawing.Point(246, 254);
+            this.textoedad.Name = "textoedad";
+            this.textoedad.Size = new System.Drawing.Size(340, 37);
+            this.textoedad.TabIndex = 7;
             // 
-            // maskedTextBox4
+            // textoGenero
             // 
-            this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(246, 322);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(275, 37);
-            this.maskedTextBox4.TabIndex = 8;
+            this.textoGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoGenero.Location = new System.Drawing.Point(246, 322);
+            this.textoGenero.Name = "textoGenero";
+            this.textoGenero.Size = new System.Drawing.Size(340, 37);
+            this.textoGenero.TabIndex = 8;
             // 
             // button1
             // 
@@ -152,10 +153,10 @@
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(836, 561);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.textoGenero);
+            this.Controls.Add(this.textoedad);
+            this.Controls.Add(this.textoNumero);
+            this.Controls.Add(this.textoNombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -175,10 +176,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox textoNombre;
+        private System.Windows.Forms.MaskedTextBox textoNumero;
+        private System.Windows.Forms.MaskedTextBox textoedad;
+        private System.Windows.Forms.MaskedTextBox textoGenero;
         private System.Windows.Forms.Button button1;
     }
 }
