@@ -8,10 +8,10 @@ namespace ddsffg.modelo
 {
     class Estudiante
     {
-		public byte edad { get; set; }
-		public string nombre { get; set; }
-		public char genero { get; set; }
-		public long numeroControl { get; set; }
+		public byte edad;
+		public string nombre;
+		public char genero;
+		public long numeroControl;
 
         public long NuumeroControl
         {
@@ -27,5 +27,47 @@ namespace ddsffg.modelo
                 }
             }
         }
-    }
+		public byte Edad
+		{
+			get
+			{
+				return this.edad;
+			}
+			set
+			{
+				if(value >= 0 || value <= 100)
+				{
+					this.edad = value;
+				}
+			}
+		}
+		public string Nombre
+		{
+			get
+			{
+				return this.nombre;
+			}
+			set
+			{
+				if (value != null || (value.Length >= 3 && value.Length <= 30))
+				{
+					this.nombre = value;
+				}
+			}
+		}
+		public char Genero
+		{
+			get
+			{
+				return this.genero;
+			}
+			set
+			{
+				if( value == 'h'|| value == 'H'|| value == 'm' || value == 'M' )
+				{
+					this.genero = value;
+				}
+			}
+		}
+	}
 }

@@ -52,7 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="modelo\Campeonato\Cancha.cs" />
+    <Compile Include="modelo\Campeonato\nombre.cs" />
     <Compile Include="modelo\Campeonato\Equipo.cs" />
     <Compile Include="modelo\Campeonato\Jugador.cs" />
     <Compile Include="modelo\Estudiante.cs" />

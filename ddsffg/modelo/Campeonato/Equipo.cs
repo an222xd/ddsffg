@@ -31,9 +31,47 @@ namespace ddsffg.modelo.Campeonato
 				}  
 			}
 		}
-		public string Nombre { get; set; }
-		public string Comunidad { get; set; }
-		public string Entrenador { get; set; }
+		public string Nombre
+		{ get
+			{
+				return this.nombre;
+			}
+			set
+			{
+				if(value != null || (value.Length >= 3 && value.Length <= 30))
+				{
+					this.nombre = value;
+				}
+			}
+		}
+		public string Comunidad
+		{
+			get
+			{
+				return this.comunidad;
+			}
+			set
+			{
+				if(value != null || (value.Length >= 3 && value.Length <= 50))
+				{
+					this.comunidad = value;
+				}
+			}
+		}
+		public string Entrenador
+		{
+			get
+			{
+				return this.entrenador;
+			}
+			set
+			{
+				if(value != null || (value.Length > 3 && value.Length <= 30))
+				{
+					this.entrenador = value;
+				}
+			}
+		}
 
 
 	}
