@@ -21,7 +21,7 @@ namespace ddsffg.modelo.Campeonato
 			this.id = 1;
 			for (int i = 1; i <= 20; i++)
 			{
-				Jornada jornada1 = new Jornada();
+				Jornada jornada1 = new Jornada(i);
 				jornadas.Add(jornada1);
 			}
 		}

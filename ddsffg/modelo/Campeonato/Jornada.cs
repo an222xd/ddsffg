@@ -19,6 +19,11 @@ namespace ddsffg.modelo.Campeonato
 			this.fechaInicio = DateTime.Today;
 			this.isConcluida = false;
 			
+			
+		}
+		public Jornada(int i)
+		{
+		  
 		}
 		public int Id
 		{
