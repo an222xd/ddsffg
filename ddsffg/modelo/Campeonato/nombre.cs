@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ddsffg.modelo.Campeonato
 {
 	class nombre
-	{
+	{ 
 		private int id;
 		private string nombre1;
 		private string ubicacion;
