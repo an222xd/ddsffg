@@ -64,6 +64,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="modelo\carreras.cs" />
+    <Compile Include="vista\FormaJoulnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaJoulnal.Designer.cs">
+      <DependentUpon>FormaJoulnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\formChampinonship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\formChampinonship.Designer.cs">
+      <DependentUpon>formChampinonship.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\pag.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="vista\FormaJoulnal.resx">
+      <DependentUpon>FormaJoulnal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\formChampinonship.resx">
+      <DependentUpon>formChampinonship.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,7 +114,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\sm_08653cfafb0104cc9c2b8e5fce3d5aa0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
