@@ -60,6 +60,11 @@
     <Compile Include="modelo\Campeonato\Equipo.cs" />
     <Compile Include="modelo\Campeonato\Jugador.cs" />
     <Compile Include="modelo\Campeonato\Partido.cs" />
+    <Compile Include="modelo\Cinema\Cliente.cs" />
+    <Compile Include="modelo\Cinema\Empleado.cs" />
+    <Compile Include="modelo\Cinema\MockObjetos.cs" />
+    <Compile Include="modelo\Cinema\Persona.cs" />
+    <Compile Include="modelo\Cinema\Sala.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

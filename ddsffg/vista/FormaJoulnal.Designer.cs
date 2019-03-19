@@ -106,7 +106,7 @@
 			this.tableLayoutPanel1.ColumnCount = 3;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
 			this.tableLayoutPanel1.Controls.Add(this.buttonEquipos, 0, 1);
 			this.tableLayoutPanel1.Controls.Add(this.buttonJornadas, 1, 0);
 			this.tableLayoutPanel1.Controls.Add(this.buttonCampeonato, 0, 0);
@@ -128,7 +128,7 @@
 			this.buttonEquipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonEquipos.Location = new System.Drawing.Point(3, 165);
 			this.buttonEquipos.Name = "buttonEquipos";
-			this.buttonEquipos.Size = new System.Drawing.Size(322, 157);
+			this.buttonEquipos.Size = new System.Drawing.Size(307, 157);
 			this.buttonEquipos.TabIndex = 6;
 			this.buttonEquipos.Text = "Equipos";
 			this.buttonEquipos.UseVisualStyleBackColor = false;
@@ -138,9 +138,9 @@
 			this.buttonJornadas.BackColor = System.Drawing.Color.HotPink;
 			this.buttonJornadas.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.buttonJornadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.buttonJornadas.Location = new System.Drawing.Point(331, 3);
+			this.buttonJornadas.Location = new System.Drawing.Point(316, 3);
 			this.buttonJornadas.Name = "buttonJornadas";
-			this.buttonJornadas.Size = new System.Drawing.Size(322, 156);
+			this.buttonJornadas.Size = new System.Drawing.Size(307, 156);
 			this.buttonJornadas.TabIndex = 5;
 			this.buttonJornadas.Text = "Jornadas";
 			this.buttonJornadas.UseVisualStyleBackColor = false;
@@ -152,7 +152,7 @@
 			this.buttonCampeonato.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonCampeonato.Location = new System.Drawing.Point(3, 3);
 			this.buttonCampeonato.Name = "buttonCampeonato";
-			this.buttonCampeonato.Size = new System.Drawing.Size(322, 156);
+			this.buttonCampeonato.Size = new System.Drawing.Size(307, 156);
 			this.buttonCampeonato.TabIndex = 0;
 			this.buttonCampeonato.Text = "Campeonato";
 			this.buttonCampeonato.UseVisualStyleBackColor = false;
@@ -162,9 +162,9 @@
 			// flowLayoutPanel2
 			// 
 			this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(659, 3);
+			this.flowLayoutPanel2.Location = new System.Drawing.Point(629, 3);
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(98, 156);
+			this.flowLayoutPanel2.Size = new System.Drawing.Size(128, 156);
 			this.flowLayoutPanel2.TabIndex = 1;
 			// 
 			// flowLayoutPanel3
@@ -172,17 +172,17 @@
 			this.flowLayoutPanel3.Controls.Add(this.pictureBox2);
 			this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-			this.flowLayoutPanel3.Location = new System.Drawing.Point(659, 165);
+			this.flowLayoutPanel3.Location = new System.Drawing.Point(629, 165);
 			this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-			this.flowLayoutPanel3.Size = new System.Drawing.Size(98, 157);
+			this.flowLayoutPanel3.Size = new System.Drawing.Size(128, 157);
 			this.flowLayoutPanel3.TabIndex = 7;
 			// 
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = global::ddsffg.Properties.Resources._return;
-			this.pictureBox2.Location = new System.Drawing.Point(3, 104);
+			this.pictureBox2.Location = new System.Drawing.Point(3, 77);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(95, 50);
+			this.pictureBox2.Size = new System.Drawing.Size(128, 77);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox2.TabIndex = 0;
 			this.pictureBox2.TabStop = false;
