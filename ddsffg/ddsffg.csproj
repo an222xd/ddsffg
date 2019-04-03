@@ -56,6 +56,7 @@
     <Compile Include="modelo\Campeonato\campeonato1.cs" />
     <Compile Include="modelo\Campeonato\Cancha.cs" />
     <Compile Include="modelo\Campeonato\Jornada.cs" />
+    <Compile Include="modelo\Campeonato\LigaFutbol.cs" />
     <Compile Include="modelo\Campeonato\nombre.cs" />
     <Compile Include="modelo\Campeonato\Equipo.cs" />
     <Compile Include="modelo\Campeonato\Jugador.cs" />
@@ -69,11 +70,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="modelo\carreras.cs" />
-    <Compile Include="vista\FormaJoulnal.cs">
+    <Compile Include="vista\Jornadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vista\FormaJoulnal.Designer.cs">
-      <DependentUpon>FormaJoulnal.cs</DependentUpon>
+    <Compile Include="vista\Jornadas.Designer.cs">
+      <DependentUpon>Jornadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="vista\formChampinonship.cs">
       <SubType>Form</SubType>
@@ -100,8 +107,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="vista\FormaJoulnal.resx">
-      <DependentUpon>FormaJoulnal.cs</DependentUpon>
+    <EmbeddedResource Include="vista\Jornadas.resx">
+      <DependentUpon>Jornadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\formChampinonship.resx">
       <DependentUpon>formChampinonship.cs</DependentUpon>
@@ -124,6 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecc050305110bc30403d684f4064fe66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

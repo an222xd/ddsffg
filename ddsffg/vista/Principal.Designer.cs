@@ -1,6 +1,6 @@
 ﻿namespace ddsffg.vista
 {
-	partial class FormaJoulnal
+	partial class Principal
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -38,7 +38,7 @@
 			this.buttonCampeonato = new System.Windows.Forms.Button();
 			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
 			this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.Exit = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
@@ -47,7 +47,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.flowLayoutPanel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// splitContainer1
@@ -132,6 +132,7 @@
 			this.buttonEquipos.TabIndex = 6;
 			this.buttonEquipos.Text = "Equipos";
 			this.buttonEquipos.UseVisualStyleBackColor = false;
+			this.buttonEquipos.Click += new System.EventHandler(this.buttonEquipos_Click);
 			// 
 			// buttonJornadas
 			// 
@@ -156,6 +157,7 @@
 			this.buttonCampeonato.TabIndex = 0;
 			this.buttonCampeonato.Text = "Campeonato";
 			this.buttonCampeonato.UseVisualStyleBackColor = false;
+			this.buttonCampeonato.Click += new System.EventHandler(this.buttonCampeonato_Click);
 			this.buttonCampeonato.MouseEnter += new System.EventHandler(this.buttonCampeonato_MouseEnter);
 			this.buttonCampeonato.MouseLeave += new System.EventHandler(this.buttonCampeonato_MouseLeave);
 			// 
@@ -169,7 +171,7 @@
 			// 
 			// flowLayoutPanel3
 			// 
-			this.flowLayoutPanel3.Controls.Add(this.pictureBox2);
+			this.flowLayoutPanel3.Controls.Add(this.Exit);
 			this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
 			this.flowLayoutPanel3.Location = new System.Drawing.Point(629, 165);
@@ -177,16 +179,16 @@
 			this.flowLayoutPanel3.Size = new System.Drawing.Size(128, 157);
 			this.flowLayoutPanel3.TabIndex = 7;
 			// 
-			// pictureBox2
+			// Exit
 			// 
-			this.pictureBox2.Image = global::ddsffg.Properties.Resources._return;
-			this.pictureBox2.Location = new System.Drawing.Point(3, 77);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(128, 77);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 0;
-			this.pictureBox2.TabStop = false;
-			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+			this.Exit.Image = global::ddsffg.Properties.Resources._return;
+			this.Exit.Location = new System.Drawing.Point(3, 77);
+			this.Exit.Name = "Exit";
+			this.Exit.Size = new System.Drawing.Size(128, 77);
+			this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.Exit.TabIndex = 0;
+			this.Exit.TabStop = false;
+			this.Exit.Click += new System.EventHandler(this.pictureBox2_Click);
 			// 
 			// FormaJoulnal
 			// 
@@ -207,7 +209,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -224,6 +226,6 @@
 		private System.Windows.Forms.Button buttonJornadas;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.PictureBox Exit;
 	}
 }

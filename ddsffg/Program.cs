@@ -10,6 +10,9 @@ namespace ddsffg
 {
     static class Program
     {
+
+		public static Principal principal = null;
+		public static formChampinonship formacampeonato = null;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,7 +21,7 @@ namespace ddsffg
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormaJoulnal());
+            Application.Run(new Principal());
         }
     }
 }

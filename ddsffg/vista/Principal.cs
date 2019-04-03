@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ddsffg.vista;
 
 namespace ddsffg.vista
 {
-	public partial class FormaJoulnal : Form
+	public partial class Principal : Form
 	{
-		public FormaJoulnal()
+		public Principal()
 		{
 			InitializeComponent();
 		}
@@ -42,6 +43,22 @@ namespace ddsffg.vista
 		private void pictureBox2_Click(object sender, EventArgs e)
 		{
 			Application.Exit();
+		}
+
+		private void buttonCampeonato_Click(object sender, EventArgs e)
+		{
+			formChampinonship fh = new formChampinonship();
+			this.Hide();
+			fh.ShowDialog();
+			this.Close();
+		}
+
+		private void buttonEquipos_Click(object sender, EventArgs e)
+		{
+			pag fh = new pag();
+			this.Hide();
+			fh.ShowDialog();
+			this.Close();
 		}
 	}
 }
